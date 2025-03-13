@@ -10,9 +10,9 @@ import Hero from '../components/Hero'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-WHITE">
       <Head>
-        <title>Your Name - Portfolio</title>
+        <title>Peter-Karl Jackson - Portfolio</title>
         <meta name="description" content="Personal portfolio website" />
         <link rel="icon" href="/favicon.ico" /> 
       </Head>

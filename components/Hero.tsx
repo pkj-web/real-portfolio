@@ -1,20 +1,30 @@
 //import Image from 'next/image';
 import Link from 'next/link';
+import {goToGithub} from '../utils/helpers';
+
+
+
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-black">
+    <section className="bg-#FDF0D5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 md:pr-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Hi, I'm <span className="text-blue-600">Peter-Karl Jackson</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-6">
-            Software Engineer
+            Software Engineer 
+            <button onClick={goToGithub}>
+            <img 
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+            alt="GitHub" 
+            className="ml-2 w-10 h-10 fixed top-4 right-4 cursor-pointer" />
+            
+            </button>
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            I build responsive web applications with modern technologies. 
-            Passionate about clean code and user-friendly interfaces.
+            Just a guy who loves solving, building, and testing software :)
           </p>
           <div className="flex space-x-4">
             <Link href="#projects">
