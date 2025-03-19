@@ -1,27 +1,21 @@
-import { useState, FormEvent, ChangeEvent } from 'react';
+import { useState } from 'react';
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
-const Contact: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
+const Contact = () => {
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
-  const [formStatus, setFormStatus] = useState<string | null>(null);
+  const [formStatus, setFormStatus] = useState(null);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus('submitting');
     
@@ -35,7 +29,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
           Contact Me
@@ -110,7 +104,7 @@ const Contact: React.FC = () => {
           
           <div className="mt-8 text-center">
             <p className="text-gray-600">Or reach me directly at:</p>
-            <p className="text-blue-600 font-medium">your.email@example.com</p>
+            <p className="text-blue-600 font-medium">jackson.peterkarl@gmail.com</p>
           </div>
         </div>
       </div>

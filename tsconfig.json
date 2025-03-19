@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "utils/helpers.js", "pages/index.jsx", "pages/_document.jsx", "pages/_app.jsx", "pages/api/hello.js", "components/Skills.jsx", "components/Projects.jsx", "components/Navbar.jsx", "components/Hero.jsx", "components/Footer.jsx", "components/Contact.jsx", "components/BackToTopButton.jsx", "components/About.jsx"],
   "exclude": ["node_modules"]
 }

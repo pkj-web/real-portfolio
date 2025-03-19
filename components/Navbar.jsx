@@ -1,32 +1,31 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-[#FFFFFF] shadow-md sticky top-0">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between h-16">
+       
+        <div className="flex justify-center h-16">
           <div className="flex items-center">
-            <Link href="/">
-              <span className="font-bold text-xl cursor-pointer">Your Name</span>
-            </Link>
+            
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="#about">
-              <span className="hover:text-blue-600 cursor-pointer">About</span>
+              <span className=" text-[#333333] hover:text-[#3CAEA3] cursor-pointer">About</span>
             </Link>
             <Link href="#projects">
-              <span className="hover:text-blue-600 cursor-pointer">Projects</span>
+              <span className=" text-[#333333] hover:text-[#3CAEA3] cursor-pointer">Projects</span>
             </Link>
             <Link href="#skills">
-              <span className="hover:text-blue-600 cursor-pointer">Skills</span>
+              <span className=" text-[#333333] hover:text-[#3CAEA3] cursor-pointer">Skills</span>
             </Link>
             <Link href="#contact">
-              <span className="hover:text-blue-600 cursor-pointer">Contact</span>
+              <span className=" text-[#333333] hover:text-[#3CAEA3] cursor-pointer">Contact</span>
             </Link>
           </div>
           
