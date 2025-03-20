@@ -1,5 +1,3 @@
-
-
 const Hero = () => {
   return (
     // Main section with white background and vertical padding
@@ -12,15 +10,18 @@ const Hero = () => {
           <div className="h-16 mb-2 flex items-center justify-center">
             {/* Heading with responsive font sizes */}
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-              {/* Name with blue color */}
-              <span className="text-blue-600">Peter-Karl Jackson</span>
+              {/* Name with gradient text effect */}
+              <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                Peter-Karl Jackson
+              </span>
             </h1>
           </div>
           
           {/* Fixed-height container for the title to prevent layout shift */}
           <div className="h-12 mb-6 flex items-center justify-center">
-            {/* Subtitle with responsive font sizes */}
-            <h2 className="text-2xl md:text-3xl text-gray-700">
+            {/* Subtitle with typewriter effect */}
+            <h2 id="swe" className="text-2xl md:text-3xl text-gray-700">
+              
               Software Engineer
             </h2>
           </div>
@@ -28,7 +29,7 @@ const Hero = () => {
           {/* Image container (if needed) */}
           <div className="mt-8 flex justify-center">
             {/* Your image can go here */}
-            {/* Commented out as per your original code */}
+            {/* Commented out for now */}
           </div>
         </div>
       </div>

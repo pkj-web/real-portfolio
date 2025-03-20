@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Back to Top Button",
+      title: "Freedom Finances",
       description: "An open-source contribution to the Fork-Commit-Merge project. Implemented a floating button that appears when users scroll down and takes them back to the top of the page.",
       image: "/project1-placeholder.jpg",
       tags: ["React", "JavaScript", "Tailwind CSS", "Open Source"],
@@ -13,7 +13,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Portfolio Website",
+      title: "Vision",
       description: "A responsive personal portfolio website built with Next.js and Tailwind CSS to showcase my projects and skills.",
       image: "/project2-placeholder.jpg",
       tags: ["Next.js", "JavaScript", "Tailwind CSS"],
